@@ -1,0 +1,25 @@
+
+<h1>Checking Out Equipment</h1>
+ 
+<%= form_for :equipment, url: equipment_path(@equipment), method: :patch do |f| %>
+ 
+ 
+  <p>
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+
+  </p>
+
+  <p>
+
+  	<%= f.label :student %><br>
+  	<%= f.text_field :student %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>
+ 
+<%= link_to 'Back', equipment_path %>

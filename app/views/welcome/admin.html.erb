@@ -1,0 +1,38 @@
+<h1> Admin </h1>
+<p> This is the admin page. You can create new equipment, new users to rent out equipment, and view orders for rentals. <p>
+
+
+<%= link_to "Add New Equipment", new_equipment_path %>
+
+<p> Here are the students - or people that are allowed to rent the equipment. when you update a file to recognize that it's being checked out, you'll have a drop down menu of students that can rent it. in the main page it'll have all their contact info, but for now all you have to change is who is taking out what equipment. </p>
+
+
+
+
+<h1> Students </h1>
+
+<% @students = Student.all %>
+<% @students.each do |student| %>
+<%= student.name %></br>
+<%= student.email %></br>
+<%= student.phone %></br>
+<hr>
+<% end %>
+
+<%= link_to "Create New Student", new_student_path %>
+
+<br>
+<h1> Employees </h1>
+
+
+<% @users = User.all %>
+<% @users.each do |user| %>
+  <%= user.email %><br/>
+<% end %>
+
+
+<hr>
+
+<h1> Orders </h1>
+
+<h3> and orders, where every time a thing is rented out (pass parameters where create order if equipment boolean is made true), an order is created timestamping, naming equipment, category, and student and user who checked it out. </h3>

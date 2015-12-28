@@ -1,0 +1,21 @@
+<h2> New Student Generator </h2>
+
+<%= form_for :student, url: student_index_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+  
+  <p>
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

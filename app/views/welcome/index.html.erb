@@ -1,0 +1,27 @@
+<h1> Howdy </h1>
+<h2> so this is where they'll place the equipment system information. </h2>
+
+
+<h3> This is where we'll list the equipment. </h3>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th> Student </th>
+    <th>Check In/Check Out </th>
+  </tr>
+ 
+  <% @equipments.each do |equipment| %>
+    <tr>
+      <td><%= equipment.name %></td>
+      <td><%= equipment.category %></td>
+      <td><%= equipment.student %></td>
+      <td><%= link_to 'Check Out', edit_equipment_path(equipment) %></td>
+    
+
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "Admin Page", welcome_admin_path %>

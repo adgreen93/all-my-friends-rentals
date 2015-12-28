@@ -1,0 +1,23 @@
+<h1> Howdy. This is the equipment CRUD page, which will be passed into the main index page. Which will in turn become part of the admin dashboard. Real sexy stuff. </h1>
+
+<h2> New Equipment Generator </h2>
+
+<%= form_for :equipment, url: equipment_index_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ <p>
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </p>
+  
+  <p>
+    <%= f.label :student %><br>
+    <%= f.text_field :student %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
