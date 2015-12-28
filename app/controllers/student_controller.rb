@@ -1,6 +1,4 @@
 class StudentController < ApplicationController
-after_save 
-	flash[:notice] = "Post successfully created"
 	def index
 		@student = Student.all
 	end

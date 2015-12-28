@@ -14,6 +14,7 @@ class EquipmentController < ApplicationController
 		@equipment = Equipment.all
 	end
 
+
 	def edit
 		@equipment = Equipment.find(params[:id])
 	end
@@ -26,7 +27,15 @@ class EquipmentController < ApplicationController
 		else
 			render 'edit'
 		end
+
+
 	end
+	def destroy
+  			@equipment = Equipment.find(params[:id])
+  			@equipment.destroy
+ 
+  redirect_to equipment_path
+end
 
 	private 
 	def equipment_params

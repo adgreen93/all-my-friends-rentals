@@ -13,7 +13,7 @@
   <p>
 
   	<%= f.label :student %><br>
-  	<%= f.text_field :student %>
+    <%= f.collection_select(:student, Student.all, :name, :name) %><br>
   </p>
  
   <p>
@@ -23,3 +23,4 @@
 <% end %>
  
 <%= link_to 'Back', equipment_path %>
+

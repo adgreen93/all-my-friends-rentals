@@ -1,7 +1,12 @@
 class WelcomeController < ApplicationController
   
   	def index
-		@equipments = Equipment.all
+		@equipment = Equipment.all
+	end
+
+	
+	def admin 
+		@equipment = Equipment.all
 	end
   
   	def registrations

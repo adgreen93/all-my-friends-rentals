@@ -2,11 +2,35 @@
 <p> This is the admin page. You can create new equipment, new users to rent out equipment, and view orders for rentals. <p>
 
 
+
+<h1> Equipment (Edit & Destroy) </h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th> Student </th>
+    <th> Edit Equipment </th>
+    <th> Destroy Equipment </th>
+  </tr>
+ 
+  <% @equipment.each do |equipment| %>
+    <tr>
+      <td><%= equipment.name %></td>
+      <td><%= equipment.category %></td>
+      <td><%= equipment.student %></td>
+      <td><%= link_to 'Edit', edit_equipment_path(equipment) %></td>
+    <td><%= link_to 'Destroy', equipment_path(equipment),
+              method: :delete,
+              data: { confirm: 'Are you sure?' }
+              %>
+            </td>
+
+    </tr>
+  <% end %>
+</table>
+<hr>
 <%= link_to "Add New Equipment", new_equipment_path %>
-
-<p> Here are the students - or people that are allowed to rent the equipment. when you update a file to recognize that it's being checked out, you'll have a drop down menu of students that can rent it. in the main page it'll have all their contact info, but for now all you have to change is who is taking out what equipment. </p>
-
-
 
 
 <h1> Students </h1>
@@ -34,5 +58,14 @@
 <hr>
 
 <h1> Orders </h1>
+
+<% @orders = Order.all %>
+<% @orders.each do |orders| %>
+<%= orders.name %>
+<%= orders.category %>
+<%= orders.student %>
+<%= orders.created_at %>
+<br>
+<% end %>
 
 <h3> and orders, where every time a thing is rented out (pass parameters where create order if equipment boolean is made true), an order is created timestamping, naming equipment, category, and student and user who checked it out. </h3>
