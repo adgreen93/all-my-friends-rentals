@@ -3,26 +3,19 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+This project came about after working in a department that relied heavily on physical documents for recording & storing records for equipment. It was simple, and effective - every time a student needed equipment, we would go and see if it was in stock, write down all their contact information, and tell them they had 24 hours to use it and bring it back. We'd store each 'order', or sheet of paper in a binder, and then file it away. Whoever worked the desk at the time would write their initials. 
 
-* Ruby version
+The problem? It's a logistical block (having to physically check out equipment, refilling the same contact information for students, losing orders older than a week, no real proof of who was checking out equipment, etc.). And while this is honestly more of a 90s problem, I found it effective and educational to build a rental system that would address all these problems.
 
-* System dependencies
+Here it is! It's flexible enough to be used as an equipment rental system, a food ordering system, or any type of system that works with orders from a list of products.
 
+* Set Up
+
+  It's a Rails project - auth is used with the Devise gem. Once you start the server you can add directly to the database from the website.
+  
+  Rails Version 4.2.1
+  Ruby Version 2.2.2
+  Devise Version 3.5.3
+  
 * Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
