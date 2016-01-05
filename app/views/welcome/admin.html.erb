@@ -1,11 +1,12 @@
-<h1> Admin </h1>
-<p> This is the admin page. You can create new equipment, new users to rent out equipment, and view orders for rentals. <p>
+<h1 style="text-align:center"> University of You </h1>
+<h3 style="text-align:center"> Admin </h3>
+<p style="text-align:center"> This is the admin page. You can create new equipment, new users to rent out equipment, and view orders for rentals. <p>
 
 
 
-<h1> Equipment (Edit & Destroy) </h1>
+<h1> Equipment</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Name</th>
     <th>Category</th>
@@ -34,38 +35,64 @@
 
 
 <h1> Students </h1>
+<table class="table">
+  <tr>
+    <th> Student Name </th>
+    <th> Email </th>
+    <th> Phone Number </th>
+  </tr>
+
 
 <% @students = Student.all %>
 <% @students.each do |student| %>
-<%= student.name %></br>
-<%= student.email %></br>
-<%= student.phone %></br>
-<hr>
+<tr>
+<td><%= student.name %></td>
+<td><%= student.email %></td>
+<td><%= student.phone %></td>
+
+</tr>
 <% end %>
+</table>
+
 
 <%= link_to "Create New Student", new_student_path %>
 
 <br>
 <h1> Employees </h1>
 
-
+<table class="table">
 <% @users = User.all %>
+<tr>
 <% @users.each do |user| %>
-  <%= user.email %><br/>
+<td><%= user.email %></td>
+</tr>
 <% end %>
+</table>
 
 
 <hr>
 
 <h1> Orders </h1>
+<table class="table">
+  <tr>
+    <th> Equipment Name </th>
+    <th> Equipment Category </th>
+    <th> Student Renter </th>
+    <th> Order Time </th>
+  </tr>
 
+  <tr>
 <% @orders = Order.all %>
 <% @orders.each do |orders| %>
-<%= orders.name %>
-<%= orders.category %>
-<%= orders.student %>
-<%= orders.created_at %>
-<br>
-<% end %>
+<td><%= orders.name %></td>
+<td><%= orders.category %></td>
+<td><%= orders.student %></td>
+<td><%= orders.created_at %></td>
+</tr>
 
-<h3> and orders, where every time a thing is rented out (pass parameters where create order if equipment boolean is made true), an order is created timestamping, naming equipment, category, and student and user who checked it out. </h3>
+<% end %>
+</table>
+
+
+
+
