@@ -10,10 +10,11 @@ Here it is! It's flexible enough to be used as an equipment rental system, a foo
 
   It's a Rails project - auth is used with the Devise gem. Once you start the server you can add directly to the database from the website.
   
-  Rails Version 4.2.1
-  Ruby Version 2.2.2
-  Devise Version 3.5.3
+
   
 * Configuration
 
+  Rails Version 4.2.1
+  Ruby Version 2.2.2
+  Devise Version 3.5.3
 
