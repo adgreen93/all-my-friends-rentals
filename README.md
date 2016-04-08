@@ -9,6 +9,12 @@ The problem? It's a logistical block (having to physically check out equipment, 
 
 Here it is! It's flexible enough to be used as an equipment rental system, a food ordering system, or any type of system that works with orders from a list of products.
 
+
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend1.png)
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend2.png)
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend3.png)
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend4.png)
+
 * Set Up
 
   It's a Rails project - auth is used with the Devise gem. Once you start the server you can add directly to the database from the website.
@@ -21,8 +27,4 @@ Here it is! It's flexible enough to be used as an equipment rental system, a foo
   Ruby Version 2.2.2
   Devise Version 3.5.3
 
-![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend1.png)
-![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend2.png)
-![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend3.png)
-![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend4.png)
 
