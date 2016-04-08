@@ -1,5 +1,5 @@
 == README
-![Alt Text](https://github.com/adgreen93/ticket-to-ride-scheduling/raw/master/public/ticketlogo.png)
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/AllMyFriendsLogo1.png)
 
 
 This project came about after working in a department that relied heavily on physical documents for recording & storing records for equipment. It was simple, and effective - every time a student needed equipment, we would go and see if it was in stock, write down all their contact information, and tell them they had 24 hours to use it and bring it back. We'd store each 'order', or sheet of paper in a binder, and then file it away. Whoever worked the desk at the time would write their initials. 
