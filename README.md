@@ -21,3 +21,8 @@ Here it is! It's flexible enough to be used as an equipment rental system, a foo
   Ruby Version 2.2.2
   Devise Version 3.5.3
 
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend1.png)
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend2.png)
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend3.png)
+![Alt Text](https://github.com/adgreen93/we-are-your-friends-rentals/raw/master/public/friend4.png)
+
